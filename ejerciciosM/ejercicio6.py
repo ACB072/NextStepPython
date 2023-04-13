@@ -3,13 +3,21 @@
 
 
 def SumNum():
-    op = "si"
-    while op == "si":
-        num = int(input("Pone un número: "))
-        sum = 0
-        for num in range(1, num+1):
-            sum = num + sum
-        print(f"La suma de todos los números desde {num} hasta 1 = {sum}")
 
-        choose = input("Quieres poner otro? 'si' o 'no': ")
-        op = choose.lower()
+        
+        op = "s"
+        while op == "s":
+            try:
+                num = int(input("Pon un número: "))
+                sum = 0
+                for num in range(1, num+1):
+                    sum = num + sum
+                print(f"La suma de todos los números desde {num} hasta 1 = {sum}")
+
+                
+
+            except:
+                print("No has introducido un número")
+
+            choose = input("Si quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
+            op = choose.lower()

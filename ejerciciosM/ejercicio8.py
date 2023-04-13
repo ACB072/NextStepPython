@@ -2,11 +2,15 @@
 
 
 def Cadena5Car():
-    cadena = input("Escribe una cadena: ")
-    cadena = cadena.split()
-    nuevaCad = []
-    for palabra in cadena:
-        if len(palabra) > 5:
-            nuevaCad.append(palabra)
-    print(nuevaCad)
+    op = "s"
+    while op == "s":
+        cadena = input("Escribe una cadena: ")
+        cadena = cadena.split()
+        nuevaCad = []
+        for palabra in cadena:
+            if len(palabra) > 5:
+                nuevaCad.append(palabra)
+        print(nuevaCad)
 
+        choose =  input("Si quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
+        op = choose.lower()

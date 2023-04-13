@@ -2,10 +2,15 @@
 
 
 def CadenaCar():
-    cadena = input("Escribe una cadena: ")
-    for caracter in cadena:
-        print(caracter)
-        print()
+    op = "s"
+    while op == "s":
 
+        cadena = input("Escribe una cadena: ")
+        for caracter in cadena:
+            print(caracter)
+            print()
+
+        choose =  input("Si quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
+        op = choose.lower()
 
 

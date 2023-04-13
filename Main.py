@@ -1,4 +1,5 @@
 import os
+import platform
 from prettytable import PrettyTable
 from termcolor import colored
 from EjerciciosAntonio import Ejercicio1
@@ -14,7 +15,12 @@ from ejerciciosM import ejercicio10
 from ejerciciosM import ejercicio11
 
 while True:
-    os.system("clear")
+    if platform.system() == "Windows":
+        os.system("cls")
+        print("mac")
+    elif platform.system() == "Darwin":
+        os.system("clear")
+
     # print("Bienvenidos")
     # print("Menu principal")
     # tabla = PrettyTable()

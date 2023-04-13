@@ -5,11 +5,15 @@ from datetime import datetime, timedelta
 
 from pytz import timezone
 import pytz
-
-print (pytz.all_timezones)
-zona=input("Introduce la zona horaria que deseas ver, con el formato Continente/Localizacion: ")
-try:
-        zonatiempo=timezone(zona)
-        print(datetime.now(timezone(zona)))
-except pytz.exceptions.UnknownTimeZoneError:
-        print("Debe ser una zona horaria valida")
+def principal():
+        op = "s"
+        while op == "s":
+                print (pytz.all_timezones)
+                zona=input("Introduce la zona horaria que deseas ver, con el formato Continente/Localizacion: ")
+                try:
+                        zonatiempo=timezone(zona)
+                        print(datetime.now(timezone(zona)))
+                except pytz.exceptions.UnknownTimeZoneError:
+                        print("Debe ser una zona horaria valida")
+                choose = input("Si  quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
+                op = choose.lower()

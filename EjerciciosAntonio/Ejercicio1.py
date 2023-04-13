@@ -3,16 +3,20 @@
 
 #  El programa debe manejar excepciones en caso de que la cadena no tenga el formato correcto.
 from datetime import datetime, timedelta
-
-print("Programa Formato Fecha")
-date=input("Introduce la fecha con el formato dd/mm/aaaa :")
-dateobj=date
-try:
-      dateobj= datetime.strptime(dateobj, '%H:%m')
-except:
-        print("Formato de fecha introducido erroneo")
-else: 
-        
-        print(dateobj.strftime("%H:%m"))
-finally:
-       print("Fin del programa")
+def principal():
+        op = "s"
+        while op == "s":
+                print("Programa Formato Fecha")
+                date=input("Introduce la fecha con el formato dd/mm/aaaa :")
+                dateobj=date
+                try:
+                        dateobj= datetime.strptime(dateobj, '%d/%m/%Y')
+                except:
+                        print("Formato de fecha introducido erroneo")
+                else: 
+                        
+                        print(dateobj.strftime("%Y-%m-%d"))
+                finally:
+                        print("Fin del programa")
+                choose = input("Si  quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
+                op = choose.lower()

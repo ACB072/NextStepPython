@@ -17,24 +17,15 @@ from ejerciciosM import ejercicio11
 while True:
     if platform.system() == "Windows":
         os.system("cls")
-        print("mac")
-    elif platform.system() == "Darwin":
-        os.system("clear")
+        print("Estás en Windows")
 
-    # print("Bienvenidos")
-    # print("Menu principal")
-    # tabla = PrettyTable()
-    # tabla.field_names = ["#", "Descripción"]
-    # tabla.add_row([colored("1", "blue"), colored("1-Crea un programa en Python que acepte una fecha como cadena de caracteres", "green")])
-    # print("2-Crea un programa que le pregunte al usuario su zona horaria y le muestre la hora actual en esa zona.")
-    # print("3-Crea un programa en Python que tome una cadena de caracteres y devuelva el número de palabras que contiene. ")
-    # print("4-Crea un programa que le pida al usuario una hora en formato hh:mm y luego calcule y muestre la hora en 24 horas")
-    # print("5-Crea un programa en Python que acepte una cadena de caracteres y devuelva la cadena invertida")
-    # print("6-Crea un programa que le pida al usuario un número entero y luego calcule y muestre la suma de todos los números desde 1 hasta el número ingresado.")
-    # print("7-Crea un programa que le pida al usuario una cadena de caracteres y luego imprima cada carácter en una línea separada.")
-    # print("8-Crea un programa en Python que acepte una lista de cadenas de caracteres y devuelva una nueva lista que contenga solo las cadenas que tienen más de 5 caracteres. ")
-    # print("9-Crea un programa en Python donde la entrada sean una cadena de caracteres, una palabra y una palabra de reemplazo ,el resultado debe ser la cadena con todas las ocurrencias de la palabra reemplazadas por otra palabra.")
-    # print("10-Crea un un programa en Python que tome una lista de cadenas de caracteres y devuelva una nueva lista que contenga solo las cadenas que contienen al menos una vocal.")
+    elif platform.system() == "Darwin" :
+        os.system("clear")
+        print("Estás en MacOS")
+
+    elif platform.system() == "Linux" :
+        os.system("clear")
+        print("Estás en Linux")
 
     tabla = PrettyTable()
     tabla.field_names = ["Bienvenidos"]

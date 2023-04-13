@@ -7,7 +7,7 @@
 # Insctucciones de instalacion
 
 - Clonar el repositorio
-  - `git clone url https://github.com/CristianMiron0/StartPython.git`
+  - `git clone url https://github.com/ACB072/NextStepPython.git`
 - Crear y activar el entorno virtual
   - Version de Python 3.11.2
   - Windows

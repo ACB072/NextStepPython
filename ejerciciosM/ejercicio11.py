@@ -7,12 +7,18 @@ def Multiplos3():
         numeros = input("Intoduce una lista de números separados por espacios: ").split()
         nuevaLista = []
         for num in numeros:
-            if int(num) % 3 == 0:
-                nuevaLista.append(num)
-        print(nuevaLista)
+            if num.isdigit():
+                if int(num) % 3 == 0:
+                    nuevaLista.append(num)
+                print(nuevaLista)
+            else:
+                print("Error: al menos uno de los valores introducidos no es número")
 
         choose = input("Si quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
         op = choose.lower()
     
+Multiplos3()
+
+
 
 

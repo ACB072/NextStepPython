@@ -13,4 +13,3 @@ def CadenaCar():
         choose =  input("Si quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
         op = choose.lower()
 
-

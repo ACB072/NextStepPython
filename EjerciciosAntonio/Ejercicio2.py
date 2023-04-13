@@ -8,12 +8,15 @@ import pytz
 def principal():
         op = "s"
         while op == "s":
-                print (pytz.all_timezones)
+                print("Zonas Horarias Disponibles:")
+                print (*pytz.all_timezones,sep='\n')
                 zona=input("Introduce la zona horaria que deseas ver, con el formato Continente/Localizacion: ")
                 try:
                         zonatiempo=timezone(zona)
-                        print(datetime.now(timezone(zona)))
+                        
+                        print(datetime.now(timezone(zona)).strftime("%H:%M"))
                 except pytz.exceptions.UnknownTimeZoneError:
                         print("Debe ser una zona horaria valida")
+                        
                 choose = input("Si  quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
                 op = choose.lower()

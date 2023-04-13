@@ -16,8 +16,6 @@ def Multiplos3():
 
         choose = input("Si quieres continuar teclea 's', sino pulse cualquier otra tecla: ")
         op = choose.lower()
-    
-Multiplos3()
 
 
 
